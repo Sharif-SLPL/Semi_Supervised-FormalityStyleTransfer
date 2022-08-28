@@ -1,6 +1,6 @@
 
 #Run Supervised Training Part
-CUDA_VISIBLE_DEVICES=0 python T5_Large_filter.py \
+CUDA_VISIBLE_DEVICES=0 python Style_Transfer.py \
     -style 0 \
     -dataset em \
     -order em.sup \
