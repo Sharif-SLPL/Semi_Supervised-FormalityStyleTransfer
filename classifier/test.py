@@ -31,7 +31,7 @@ def main():
     parser.add_argument('-style', default=0, type=int, help='from 0 to 1')
     parser.add_argument('-max_len', default=50, type=int, help='max tokens in a batch')
     parser.add_argument('-embed_dim', default=300, type=int, help='the embedding size')
-    parser.add_argument('-dataset', default='em', type=str, help='the name of dataset')
+    parser.add_argument('-dataset', default='digi', type=str, help='the name of dataset')
     parser.add_argument('-model', default='textcnn', type=str, help='the name of model')
     parser.add_argument('-seed', default=42, type=int, help='pseudo random number seed')
     parser.add_argument('-batch_size', default=32, type=int, help='max sents in a batch')
