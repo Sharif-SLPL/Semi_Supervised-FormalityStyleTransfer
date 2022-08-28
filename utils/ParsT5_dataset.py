@@ -10,7 +10,7 @@ def _tokenizer(text, token_pattern=r"(?u)\b\w\w+\b"):
     token_pattern = re.compile(token_pattern)
     return token_pattern.findall(text)
 
-def augment_choice(arg, aug_p, dataset='em'):
+def augment_choice(arg, aug_p, dataset='digi'):
     if arg == 'insert':
         return naw.ContextualWordEmbsAug(model_path='HooshvareLab/bert-fa-base-uncased', action="insert")
     elif arg == 'spell':
@@ -86,8 +86,8 @@ def read_data(dataset, style, max_len, prefix,
 def read_unlabel_data(dataset, max_len,
               tokenizer, ratio=1.0, augmentor='synonym'):
 
-    src_file = 'data/unlabeled/{}'.format(dataset)
-    aug_file = 'data/unlabeled/{}-aug'.format(dataset)
+    src_file = 'data/unlabeled/tw_inf.txt
+    aug_file = 'data/unlabeled/tw_inf-aug'.format(dataset)
 
 
     src_seq = []
@@ -282,7 +282,7 @@ class T5UnsupDataset(torch.utils.data.Dataset):
 
 class T5AugDataset(torch.utils.data.Dataset):
 
-    def __init__(self, src_file, augmentor, tokenizer, max_len, aug_p=0.1, dataset='em'):
+    def __init__(self, src_file, augmentor, tokenizer, max_len, aug_p=0.1, dataset='digi'):
 
         with open(src_file, 'r', encoding='latin-1') as f1:
             self.src = f1.readlines()
