@@ -1,0 +1,8 @@
+Test Bleu score for model 0: 0.7197;  Acc: 83.4483
+Test Bleu score for model 0: 0.7197;  Acc: 83.4483
+Test Bleu score for model 0: 0.8550;  Acc: 81.7241
+Test Bleu score for model 0: 0.8550;  Acc: 81.7241
+Test Bleu score for model 0: 0.8536;  Acc: 82.0690
+Test Bleu score for model 0: 0.8536;  Acc: 82.0690
+Test Bleu score for model 0: 0.8536;  Acc: 82.0690
+Test Bleu score for model 0: 0.8536;  Acc: 82.0690

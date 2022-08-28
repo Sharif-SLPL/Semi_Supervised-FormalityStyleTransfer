@@ -1,0 +1,21 @@
+ <<<<<<<<<<<<<<<<<<<<<<<Total Result Score>>>>>>>>>>>>>>>>>>>>>>>>
+1-didi test: Semi Supervised(cls Filter)
+
+ BLEU: 0.8536;
+ Acc: 82.0690;
+ HarmonicMean: 0.8368;
+ Perplexity: 1426.8409150074717
+ <<<<<<<<<<<<<<<<<<<<<<<Total Result Score>>>>>>>>>>>>>>>>>>>>>>>>
+2-shekaste test: Semi_Supervised Model(cls Filter)
+
+ BLEU: 0.6887;
+ Acc: 90.6667;
+ HarmonicMean: 0.7828;
+ Perplexity: 4382.5470
+<<<<<<<<<<<<<<<<<<<<<<<Total Result Score>>>>>>>>>>>>>>>>>>>>>>>>
+3-rulebase test: Semi_Supervised Model(cls Filter)
+
+ BLEU: 0.5361;
+ Acc: 62.6667;
+ HarmonicMean: 0.5779;
+ Perplexity: 9603.4537
