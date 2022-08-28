@@ -9,8 +9,8 @@ import nlpaug.augmenter.word as naw
 from tqdm import tqdm
 
 def data_augment_all(dataset, augmentor):
-    src_file = 'data/unlabeled/{}'.format(dataset)
-    aug_file = 'data/unlabeled/{}-aug'.format(dataset)
+    src_file = 'data/unlabeled/tw_inf.txt'
+    aug_file = 'data/unlabeled/tw_inf-aug'
     with open(src_file, 'r') as f1, open(aug_file, 'w') as f2:
         f1 = f1.readlines()
         for i, s in enumerate(tqdm(f1)):
@@ -67,8 +67,8 @@ def read_data(dataset, style, max_len, prefix,
 def read_unlabel_data(dataset, max_len,
               tokenizer, ratio=1.0, augmentor='synonym'):
 
-    src_file = 'data/unlabeled/{}'.format(dataset)
-    aug_file = 'data/unlabeled/{}-aug'.format(dataset)
+    src_file = 'data/unlabeled/tw_inf.txt'
+    aug_file = 'data/unlabeled/tw_inf-aug'
 
 
     src_seq = []
