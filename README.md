@@ -24,7 +24,8 @@ Digikala testset: this is the comments of the digikala which is not a part of tr
 Rule-base testset: this is maily poem, story and differrent kind of informal sentences
 
 **Note**: We also provide data in this link below.
-Data Folder: https://drive.google.com/drive/folders/10pUkmzNMabmIfKZ_V3DVfPPErEQSmezp?usp=sharing
+
+Dataset Folder: https://drive.google.com/drive/folders/10pUkmzNMabmIfKZ_V3DVfPPErEQSmezp?usp=sharing
 
 ## Preparation
 ### first step: Pre-training a style classifiers
@@ -44,4 +45,5 @@ The outputs of our FST is provided in `./output`.
 
 ## Test
 For testing this model, the checkpoints are provided in the link below.
+
 Checkpoints Folder: https://drive.google.com/drive/folders/1l6bAt-5_Abi6NIkQSfjuqhKd8nl9572Y?usp=sharing
