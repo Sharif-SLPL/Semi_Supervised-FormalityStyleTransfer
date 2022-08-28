@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import time
 import argparse
 import random, re, math
@@ -18,13 +17,13 @@ from pyskiplist import SkipList
 import fitlog
 import kenlm
 import statistics
-from classifier.textcnn_t5 import TextCNN
+from classifier.textcnn import TextCNN
 from utils.optim import ScheduledOptim
 from utils.helper import optimize
 from utils.ParsT5_dataset import T5Dataset, T5UnsupDataset, T5AugDataset
 from utils.dataset import SCIterator
 from utils.nltk_bleu import evaluate_bleu
-from T5_test import test
+from ST_test import test
 
 
 
