@@ -30,7 +30,7 @@ Dataset Folder: https://drive.google.com/drive/folders/10pUkmzNMabmIfKZ_V3DVfPPE
 ## Preparation
 ### first step: Pre-training a style classifiers
 ```
-python classifier/textcnn.py -dataset em
+python classifier/textcnn.py -dataset digi
 ```
 ## 2nd step: Pre-train language models for the language model filter
 **Note**: We also provide already pretrained checkpoints in this link below.
