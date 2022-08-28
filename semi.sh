@@ -5,8 +5,8 @@ CUDA_VISIBLE_DEVICES=0 python Style_Transfer.py \
     -unsup \
     -style 0 \
     -ratio 1.0 \
-    -dataset em \
-    -order em-semi \
+    -dataset digi \
+    -order digi-semi \
     -pre_step 2000 \
     -batch_size 8 \
     -unsup_batch_size 16 \
