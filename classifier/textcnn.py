@@ -82,7 +82,7 @@ class TextCNN(nn.Module):
 def main():
     parser = argparse.ArgumentParser('Style Classifier TextCNN')
     parser.add_argument('-lr', default=1e-5, type=float, help='learning rate')
-    parser.add_argument('-dataset', default='em', type=str, help='the name of dataset')
+    parser.add_argument('-dataset', default='digi', type=str, help='the name of dataset')
     parser.add_argument('-embed_dim', default=300, type=int, help='the embedding size')
     parser.add_argument('-seed', default=42, type=int, help='pseudo random number seed')
     parser.add_argument('-min_count', default=0, type=int, help='minmum number of corpus')
