@@ -84,7 +84,7 @@ def sentence_bleu_score(sents, refs, ngrams=3):
 
 
 def main():
-    parser = argparse.ArgumentParser('Fine-Tuned T5 for style transfer')
+    parser = argparse.ArgumentParser('Fine-Tuned ParsT5 for style transfer')
     parser.add_argument('-order', default=0, type=str, help='the order of traing')
     parser.add_argument('-style', default=0, type=int, help='transfer inf. to for.')
     parser.add_argument('-lr', default=1e-5, type=float, help='the learning rate')
@@ -113,7 +113,6 @@ def main():
     parser.add_argument('-n_step', default=100, type=int, help='number of steps for computing initial score list')
     parser.add_argument('-sigma', default=0.3, type=float, help='dynamic threshold for lm/bleu filtering')
     parser.add_argument('-ngrams', default=4, type=int)
-    parser.add_argument('-log_dir', default='./logs', type=str, help='directory of logs')
 
 
     opt = parser.parse_args()
