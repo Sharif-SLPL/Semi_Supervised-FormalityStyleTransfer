@@ -9,8 +9,8 @@
 </div>
 
 
-# Semi_Supervised-Formality-Style-Transfer
-Ebrahimi's Thesis
+# Semi_Supervised FormalityStyleTransfer(Ebrahimi's Thesis)
+
 
 ## Dataset
 ## Training Dataset
