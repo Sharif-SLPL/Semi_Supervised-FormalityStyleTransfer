@@ -91,7 +91,7 @@ def main():
     parser.add_argument('-ratio', default=1., type=float, help='proportion of data')
     parser.add_argument('-model', default='parsT5-base', type=str, help='the name of model')
     parser.add_argument('-model_name', default='parsT5 path', type=str, help='the name of model')
-    parser.add_argument('-dataset', default='em', type=str, help='the name of dataset')
+    parser.add_argument('-dataset', default='digi', type=str, help='the name of dataset')
     parser.add_argument('-steps', default=100000, type=int, help='force stop at x steps')
     parser.add_argument('-batch_size', default=16, type=int, help='the size in a batch')
     parser.add_argument('-val_batch_size', default=16, type=int, help='the size in a batch')
@@ -149,7 +149,7 @@ def main():
 
     styles = ['informal', 'formal']
     if opt.style == 0:
-        unsup_file = f"/data/unlabeled/{opt.dataset.upper()}_200k_inf.txt"
+        unsup_file = f"/data/unlabeled/tw_inf.txt"
     else:
         raise ValueError("Invalid style.")
 
@@ -197,8 +197,8 @@ def main():
         else:
             # Otherwise, augment all the texts beforehand
             unlabeled_dataset = T5UnsupDataset(
-                src_file=f"data/unlabeled/{opt.dataset.upper()}_200k_inf.txt",
-                aug_file=f"data/unlabeled/{opt.dataset.upper()}_200k_inf_{opt.aug_choice}.txt",
+                src_file=f"data/unlabeled/tw_inf.txt",
+                aug_file=f"data/unlabeled/tw_inf_{opt.aug_choice}.txt",
                 max_len=opt.max_len,
                 tokenizer=tokenizer)
 
