@@ -1,5 +1,15 @@
+
+<div align="center">
+<a href="https://www.Python.org/">
+    <img src="https://img.shields.io/badge/built%20with-Python3.8-blue.svg" alt="built with Python3.8"/>
+</a>
+	<a href="https://www.Pytorch.org/">
+    <img src="https://img.shields.io/badge/pytorch-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="built with pytorch"/>
+  </a>
+</div>
+
+
 # Semi_Supervised-Formality-Style-Transfer
-Ebrahimi's Thesis
 
 
 ## Dataset
