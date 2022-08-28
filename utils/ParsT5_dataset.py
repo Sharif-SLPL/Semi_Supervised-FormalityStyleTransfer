@@ -24,8 +24,8 @@ def augment_choice(arg, aug_p, dataset='digi'):
 
 
 def data_augment_all(dataset, augmentor):
-    src_file = 'data/unlabeled/{}'.format(dataset)
-    aug_file = 'data/unlabeled/{}-{}-aug'.format(dataset, augmentor)
+    src_file = 'data/unlabeled/tw_inf.txt'
+    aug_file = 'data/unlabeled/tw_inf-{}-aug'.format(augmentor)
     if augmentor == 'insert':
         aug = naw.ContextualWordEmbsAug(model_path='HooshvareLab/bert-fa-base-uncased', action="insert")
     else:
@@ -86,8 +86,8 @@ def read_data(dataset, style, max_len, prefix,
 def read_unlabel_data(dataset, max_len,
               tokenizer, ratio=1.0, augmentor='synonym'):
 
-    src_file = 'data/unlabeled/tw_inf.txt
-    aug_file = 'data/unlabeled/tw_inf-aug'.format(dataset)
+    src_file = 'data/unlabeled/tw_inf.txt'
+    aug_file = 'data/unlabeled/tw_inf-aug'
 
 
     src_seq = []
