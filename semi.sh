@@ -1,7 +1,7 @@
 
 
 #Run Semi-Supervised Training Part
-CUDA_VISIBLE_DEVICES=0 python T5_Large_filter.py \
+CUDA_VISIBLE_DEVICES=0 python Style_Transfer.py \
     -unsup \
     -style 0 \
     -ratio 1.0 \
